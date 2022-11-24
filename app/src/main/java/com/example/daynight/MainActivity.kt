@@ -4,15 +4,15 @@ import android.content.Context
 import android.hardware.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tomtom.sdk.maps.display.MapOptions
-import com.tomtom.sdk.maps.display.style.StyleMode
-import com.tomtom.sdk.maps.display.ui.MapFragment
+import com.tomtom.sdk.map.display.MapOptions
+import com.tomtom.sdk.map.display.style.StyleMode
+import com.tomtom.sdk.map.display.ui.MapFragment
 import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
     private lateinit var sensorManager: SensorManager
     private lateinit var lightSensor: Sensor
-    private var tomTomMap: com.tomtom.sdk.maps.display.TomTomMap? = null
+    private var tomTomMap: com.tomtom.sdk.map.display.TomTomMap? = null
 
     private var styleMode: StyleMode by Delegates.observable(
         StyleMode.MAIN
